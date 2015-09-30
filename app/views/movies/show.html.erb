@@ -8,7 +8,7 @@
 <!-- <h3><%= @movie.release_date %></h3> -->
 <h3><%= formatted_date(@movie.release_date) %></h3>
 <h4>Dir. <%= @movie.director %> | <%= @movie.runtime_in_minutes %> minutes</h4>
-<%= image_tag movie.image_url.to_s %>   <!-- .to_s to avoid problem of nil if no image -->
+<%= image_tag @movie.image_url.to_s %>   <!-- .to_s to avoid problem of nil if no image -->
 <p><%= @movie.description %></p>
 
 <hr>

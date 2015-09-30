@@ -31,7 +31,7 @@
     <%= f.number_field :runtime_in_minutes %>
   </div>
   <div>
-    <%= f.label :poster_image_url %><br>
+    <%= f.label :poster_image_url, "Movie poster URL (unless uploading an image below)" %><br>
     <%= f.text_field :poster_image_url %>
   </div>
   <div>
@@ -39,10 +39,14 @@
     <%= f.text_area :description %>
   </div>
   <div>
+  <%= f.label :image, "Upload movie poster image (unless URL provided above)" %><br>
     <%= f.file_field :image %><br>
   </div>
+  <br>
   <div>
     <%= f.submit "Submit" %>
   </div>
 <% end %>
 
+<br>
+<br>
